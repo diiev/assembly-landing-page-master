@@ -1,0 +1,55 @@
+.card { 
+    width: 100%;
+    background: #fff;
+    border-radius: size(15);
+    padding: size(20) size(10);
+    img {
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        
+    }
+    &__list {
+        padding: size(10) 0;
+        border-bottom: 1px solid #C7C7C7;
+        &:last-child {
+            border-bottom: none;
+        }
+        div {
+            color: $color-primary;
+        }
+    }
+    &__title {
+        font-size: size(20);
+        &-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            img {
+                font-size: size(30);
+                margin-left: 0;
+                padding: 0;
+            }
+        }
+    }
+    &-primary {
+        background: $color-primary;
+        text-align: center;
+        color: #fff;
+        font-size: size(20);
+    }
+    &__p20 {
+        padding: size(20);
+       
+    }
+    @include media(lg) {
+       .card__text {
+            font-size: size(18);
+        }
+        &-primary {
+            .card__text {
+                font-size: size(32);
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.s_markets { 
+    position: relative;
+    &__title {
+        text-align: center;
+    }
+    &__card {
+        .card__title {
+            text-align: center;
+        }
+    }
+}
+
+@include media(lg) {
+  
+        .s_markets {
+            &__cards {
+                    display: grid;
+                  grid-template-columns: size(460) size(460) size(460);
+                  grid-template-rows: auto size(213);
+                  column-gap: size(20);
+
+            }
+            .card-primary {
+                    width: 100%;
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    font-size: size(32);
+                    padding: size(44) size(90);
+              
+            }
+        }
+
+}

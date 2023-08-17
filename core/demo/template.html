@@ -1,0 +1,183 @@
+<style>
+    .header-demo {
+        font-size: 32px;
+        padding:0.4rem 0 0.2rem;
+        border-bottom: 1px solid currentColor;
+        margin-bottom: 20px;
+        color: #464646;
+    }
+    .demo-icon {
+        margin-right: 0.2rem; 
+        margin-bottom: 0.2rem; 
+        font-size: 0.36rem;
+    }
+    .box-t {
+        margin-bottom: 0.2rem;
+    }
+    .item-t {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .flex {
+        display: flex;
+    }
+    .font-secondary  {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .italic {
+        font-style: italic;
+    }
+    .title-tp {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .template-pagination {
+        position: fixed; 
+        bottom: 10px;
+        margin: 0 auto;
+    }
+</style>
+<div data-scroll-trigger="">
+@@include("_base.html",{})
+@@include("_tipografiya.html",{})
+@@include("_btn.html",{})
+@@include("_form.html",{})
+@@include("_slider.html",{})
+@@include("_modal.html",{})
+@@include("_accordion.html",{})
+@@include("_tab.html",{})
+</div>
+
+<script>
+      
+    const Slider1 = new Swiper('.slider-1', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+        //simulateTouch: false,
+        initialSlide:1,
+        //*
+        autoHeight:true,
+        //*
+        navigation: {
+            nextEl: '.slider-1 .swiper-button-next',
+            prevEl: '.slider-1 .swiper-button-prev',
+        },
+    });
+    
+    const Slider2 = new Swiper('.slider-2', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+       // simulateTouch: false,
+        //*
+        autoHeight:true,
+        //*
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+    });
+    
+    const Slider21 = new Swiper('.slider-2-1', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+       // simulateTouch: false,
+        //*
+        autoHeight:true,
+        //*
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            dynamicBullets: true,
+            clickable: true,
+        },
+    });
+    
+    
+    const Slider3 = new Swiper('.slider-3', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+        //simulateTouch: false,
+        //*
+        autoHeight:true,
+        //*
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+    });
+    
+    const Slider4 = new Swiper('.slider-4', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+        //simulateTouch: false,
+        //*
+        autoHeight:true,
+        //*
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+    });
+    
+    const Slider5 = new Swiper('.slider-5', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+        //simulateTouch: false,
+        //*
+        autoHeight:true,
+        //*
+        pagination: {
+            el: '.swiper-pagination',
+            //type: 'custom',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
+    });
+    
+    const Slider6 = new Swiper('.slider-6', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+        //simulateTouch: false,
+        //*
+        autoHeight:true,
+        //*
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        navigation: {
+            nextEl: '.slider-6 .swiper-button-next',
+            prevEl: '.slider-6 .swiper-button-prev',
+        },
+    });
+    
+    
+    const Slider7 = new Swiper('.slider-7', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        watchOverflow: true,
+        //simulateTouch: false,
+        //*
+        autoHeight:true,
+        //*
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.slider-7 .swiper-button-next',
+            prevEl: '.slider-7 .swiper-button-prev',
+        },
+    });
+
+</script>

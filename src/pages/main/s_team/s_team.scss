@@ -1,0 +1,22 @@
+.s_team { 
+    position: relative;
+    .card__text {
+        font-size: size(16);
+    }
+    &__img {
+        border-radius: size(15);
+        max-height: 213px;
+    }
+}
+
+
+@include media(lg) {
+
+        .s_team {
+            &__wrapper {
+                display: flex;
+                gap: size(20);
+            }
+        }
+  
+}

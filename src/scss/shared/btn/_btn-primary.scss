@@ -1,0 +1,27 @@
+.btn-primary {
+    --dp-flex: flex;
+    display: var(--dp-flex);
+    align-items: center;
+    justify-content: center;
+    //*
+    font-weight: 500;
+    //*
+    border-radius: 500px;
+    max-width: 390px;
+    margin: 0 auto;
+    &._icon {
+        justify-content: space-between;
+    }
+    &--sm {
+        min-height: size(50);
+        padding: size(10) size(20);
+    }
+    &--md {
+        min-height: size(60);
+        padding: size(10) size(25);
+    }
+    &--lg {
+        min-height: size(70);
+        padding: size(10) size(30);
+    }
+}

@@ -1,0 +1,64 @@
+.s_alma { 
+    position: relative;
+    .circle {
+        position: relative;
+        font-size: size(20);
+        color: #fff;
+        font-weight: 500;
+        display: block;
+        width:size(59);
+        height: size(59);
+        background: $color-primary;
+        border-radius: 100%;
+        text-align: center;
+        padding: size(20) size(18);
+       
+        
+    }
+    &__btn {
+        position: relative;
+        padding: size(18) size(22);
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: size(16);
+        border-radius: size(255);
+        border: 1px solid #FFF;
+           &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: size(46.154);
+            height: size(46.154);
+            background: #fff;
+            border-radius: 100%;
+            right: size(7.69);
+            
+           }
+            
+        } 
+        .card { 
+            img {
+                margin: 0;
+            }
+        }
+}
+
+@include media(lg) {
+        .s_alma {
+           &__cards {
+               display: grid;
+               grid-template-columns: size(460) size(460)  size(460)  ;
+               column-gap: size(20);
+               row-gap: size(20);
+           }
+           .card-primary {
+               width: 100%;
+               grid-row-start: 2;
+               grid-row-end: 2;
+               grid-column-start: 1;
+               grid-column-end: 4;
+               font-size: size(32);
+               padding: size(59) size(90);
+           }
+        }
+}

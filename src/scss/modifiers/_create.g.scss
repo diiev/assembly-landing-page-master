@@ -1,0 +1,34 @@
+.pt-17 { padding-top: size(17); }
+.mt-26 { margin-top: size(26); }
+.mt-78\@lg { @include media(lg) { margin-top: size(78); } }
+.mb-20 { margin-bottom: size(20); }
+.mb-0\@lg { @include media(lg) { margin-bottom: size(0); } }
+.mt-86\@lg { @include media(lg) { margin-top: size(86); } }
+.mt-20 { margin-top: size(20); }
+.mt-0\@lg { @include media(lg) { margin-top: size(0); } }
+.mt-10 { margin-top: size(10); }
+.mt-40\@lg { @include media(lg) { margin-top: size(40); } }
+.pt-101\@lg { @include media(lg) { padding-top: size(101); } }
+.mb-20\@lg { @include media(lg) { margin-bottom: size(20); } }
+.mt-20\@lg { @include media(lg) { margin-top: size(20); } }
+.mt-50 { margin-top: size(50); }
+.mb-5 { margin-bottom: size(5); }
+.pt-22 { padding-top: size(22); }
+.pt-70\@lg { @include media(lg) { padding-top: size(70); } }
+.mb-30\@lg { @include media(lg) { margin-bottom: size(30); } }
+.mb-10 { margin-bottom: size(10); }
+.p-20 { padding: size(20); }
+.mt-13 { margin-top: size(13); }
+.pt-30 { padding-top: size(30); }
+.mb-30 { margin-bottom: size(30); }
+.mb-15 { margin-bottom: size(15); }
+.pt-20 { padding-top: size(20); }
+.pb-20 { padding-bottom: size(20); }
+.pl-10 { padding-left: size(10); }
+.pr-10 { padding-right: size(10); }
+.mt-30\@lg { @include media(lg) { margin-top: size(30); } }
+.pb-23 { padding-bottom: size(23); }
+.pt-40\@lg { @include media(lg) { padding-top: size(40); } }
+.w-170 { width: size(170); }
+.t\:size-16 { font-size: size(16); }
+.t\:size-20\@lg { @include media(lg) { font-size: size(20); } }

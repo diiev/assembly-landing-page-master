@@ -1,0 +1,53 @@
+:root {
+	//* переменные для работы функций size и адаптивного макета _size.scss
+	--width-max-window: 100vw;
+	--width-min-window: #{$layout-size-min};
+	--width-min-window-px: #{$layout-size-min + 'px'};
+	//*
+	--min-value: 100;
+	--min-value-px: 100px;
+	--max-value: 150;
+	//*
+	--layout-size: 480;
+	//*
+	@include media(sm) {
+		--width-max-window: 440px;
+	}
+	@include media(xs) {
+		--width-max-window: 520px;
+	}
+	@include media(md) {
+		--width-max-window: 768px;
+		--layout-size: #{$layout-size-max};
+	}
+
+	//* bp lg = min-width 1024
+	@include media(lg) {
+		//* layout
+		--width-max-window: 100vw;
+		--width-min-window: #{$layout-size-max / 2};
+		--width-min-window-px: #{($layout-size-max / 2) + "px"};
+		--min-value: 50;
+		--min-value-px: 50px;
+		--max-value: 100;
+
+		//--min-value:81.5375;
+		//--min-value-px:81.5375px;
+	}
+	@include media(xl, min) {
+		//--min-value: 66;
+		//--min-value-px: 66px;
+	}
+	@include media(hg, min) {
+		//--min-value: 80;
+		//--min-value-px: 80px;
+	}
+    
+	//* размер макета
+	@media (min-width: #{$layout-size-max + 'px'}) {
+		--width-max-window: #{$layout-size-max + "px"};
+	}
+
+	//! Не трогать!
+	font-size: calc(var(--min-value-px) + (var(--max-value) - var(--min-value)) * ((var(--width-max-window) - var(--width-min-window-px)) / (var(--layout-size) - var(--width-min-window))));
+}

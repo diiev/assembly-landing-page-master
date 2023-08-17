@@ -1,0 +1,11 @@
+{
+    "main": [
+        "home",
+        "s_catalog",
+        "s_advantages",
+        "s_markets",
+        "s_team",
+        "s_alma"
+    ]
+   
+}

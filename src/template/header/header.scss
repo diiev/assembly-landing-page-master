@@ -1,0 +1,19 @@
+.header {
+    // position: static;
+    // left: 0;
+    // top: 0;
+    // width: 100%;
+    // z-index: 950;
+   @include media(lg) {
+       &__logo {
+        margin: 0 auto;
+       }
+   }
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+   
+}
+

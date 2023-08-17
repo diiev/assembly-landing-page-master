@@ -1,0 +1,31 @@
+//*
+$font-primary: "IBM Plex Sans", sans-serif;
+$font-secondary: "", sans-serif;
+//* Размеры шрифта
+$font-size:(
+    'default':  size(16),
+    'lg':       size(19),
+);
+//* Глобальные настройки (body)
+$global-settings:(
+    'font': $font-primary,
+    'line-height': normal,
+    'font-weight': 400,
+    'color': #000,
+    'bg': #F9F9FB
+);
+
+//* базавая настройка скорости анимаций 
+$td: 400ms; 
+
+//* Размеры макета (дизайн макета):
+$layout-size-min: 320;
+$layout-size-max: 1920;
+
+
+
+//* Требуется для работы функции size-clamp, rem
+//* src\scss\core\functions\_size.scss
+//* src\scss\layout\_root.scss
+//?                                                                                               тут
+//* Учавствует в calc(50px + (100 - 50) * ((var(--size-window) - var(--width-window-px)) / (#{$layout-size} - var(--width-window))));

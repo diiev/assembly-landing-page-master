@@ -1,0 +1,22 @@
+.s_catalog { 
+    position: relative;
+    padding-top: size(40);
+@include media(lg) {
+    &__cards {
+        display: flex;
+        gap: size(10);
+        &_album {
+            flex-direction: column;
+            .card {
+                display: flex;
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+                
+            }
+        }
+    }
+
+}
+   
+}

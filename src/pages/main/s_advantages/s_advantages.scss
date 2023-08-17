@@ -1,0 +1,19 @@
+.s_advantages { 
+    position: relative;
+
+    @include media(lg) {
+        &__cards {
+            display: grid;
+            grid-template-columns: size(700) size(700);
+            gap: size(20);
+        }
+        .card__title-icon {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            img {
+                margin-right: 0;
+            }
+        }
+    }
+}
